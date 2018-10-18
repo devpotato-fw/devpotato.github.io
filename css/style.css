@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+ul {
+    list-style-type: none;
+}
 .clear {
     clear: both;
 }
@@ -9,7 +12,7 @@ a {
     text-decoration: none;
 }
 .container {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 1000px;
     margin: 0 auto;
 }
@@ -17,7 +20,7 @@ a {
 .left-menu {
     background-color: cadetblue;
     width: 350px;
-    height: 600px;
+    height: 100%;
     float: left;
     color: white;
     background: url(../images/left-menu-bg-02.JPG) no-repeat center center;
@@ -60,8 +63,24 @@ a {
 }
 /* 右边菜单栏 */
 .right-menu {
-    background-color: blueviolet;
     width: 650px;
-    height: 100px;
+    /* height: 100px; */
     float: right;
+}
+.right-menu .list {
+    margin: 30px 50px 30px;
+}
+.right-menu .list a {
+    color: #333333;
+    font-size: 18px;
+    margin: 30px 0 0;
+}
+.right-menu .list a:hover {
+    color: #333333;
+}
+.right-menu .list p {
+    color: #999999;
+    font-size: 14px;
+    padding: 5px 0 30px;
+    /* border-bottom: 1px solid #999999; */
 }
