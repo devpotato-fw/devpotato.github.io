@@ -23,32 +23,37 @@ a {
     height: 100%;
     float: left;
     color: white;
-    background: url(../images/left-menu-bg-02.JPG) no-repeat center center;
+    background: url(../images/left-menu-bg-02.JPG) center center no-repeat #666666;
 }
-.left-menu .photo {
+.left-menu-content {
+    border: 1px solid rgba(102, 102, 102, 0);
+    height: 100%;
+    background-color: rgba(102, 102, 102, 0.8);
+}
+.left-menu-content .photo {
     margin: 125px auto 0;
     width: 80px;
 }
-.left-menu .photo img {
+.left-menu-content .photo img {
     border-radius: 50%;
     border: 2px solid white;
 }
-.left-menu .username {
+.left-menu-content .username {
     margin: 0 auto;
     text-align: center;
     font-size: 36px;
 }
-.left-menu .life-motto {
+.left-menu-content .life-motto {
     margin: 0 auto;
     text-align: center;
     color: #CCCCCC;
 }
-.left-menu .introduce {
+.left-menu-content .introduce {
     width: 250px;
     margin: 50px auto 0;
     text-align: center;
 }
-.left-menu .footer {
+.left-menu-content .footer {
     margin: 50px auto 0;
 }
 .footer a {
@@ -66,6 +71,7 @@ a {
     width: 650px;
     /* height: 100px; */
     float: right;
+    overflow: auto;
 }
 .right-menu .list {
     margin: 30px 50px 30px;
@@ -81,6 +87,12 @@ a {
 .right-menu .list p {
     color: #999999;
     font-size: 14px;
+    padding: 5px 0 0px;
+    /* border-bottom: 1px solid #999999; */
+}
+.right-menu .list div {
+    font-size: 13px;
+    color: #999999;
     padding: 5px 0 30px;
     /* border-bottom: 1px solid #999999; */
 }
