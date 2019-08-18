@@ -13,17 +13,22 @@ a {
 }
 .container {
     /* border: 1px solid black; */
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
+    display: flex;
+    min-width: 800px;
+    display: none;
 }
 /* 左边菜单栏 */
 .left-menu {
     background-color: cadetblue;
-    width: 350px;
     height: 100%;
-    float: left;
+    /*float: left;*/
     color: white;
-    background: url(../images/left-menu-bg-02.JPG) no-repeat center center;
+    background: url(../images/left-menu-bg.jpg) no-repeat center center;
+    background-size: cover;
+    /*background-color: red;*/
+    flex: 2;
 }
 .left-menu .photo {
     margin: 125px auto 0;
@@ -51,7 +56,7 @@ a {
 .left-menu .footer {
     margin: 50px auto 0;
 }
-.footer a {
+.left-menu .footer a {
     display: block;
     text-align: center;
     color: white;
@@ -60,27 +65,157 @@ a {
     height: 24px;
     border: 1px solid white;
     font-size: 16px;
+    /*border-radius: 4px;*/
 }
+/*.left-menu .footer a:link, a:visited {
+    color: white;
+}
+.left-menu .footer a:hover {
+    color: white;
+}*/
 /* 右边菜单栏 */
 .right-menu {
-    width: 650px;
-    /* height: 100px; */
-    float: right;
+    height: 100%;
+    /*float: right;*/
+    flex: 5;
+    overflow: scroll;
 }
 .right-menu .list {
-    margin: 30px 50px 30px;
+    height: 100%;
+    margin: 0 0 0 100px;
+    padding-right: 100px;
+}
+.right-menu .list li {
+    margin-top: 30px;
 }
 .right-menu .list a {
     color: #333333;
-    font-size: 18px;
+    font-size: 22px;
     margin: 30px 0 0;
 }
-.right-menu .list a:hover {
+.right-menu .list a:link, a:visited {
     color: #333333;
+}
+.right-menu .list a:hover {
+    color: #c0363f;
 }
 .right-menu .list p {
     color: #999999;
     font-size: 14px;
-    padding: 5px 0 30px;
+    padding: 5px 0 0;
+    /* border-bottom: 1px solid #999999; */
+}
+.right-menu .list .time {
+    color: #c7c7c7;
+    font-size: 13px;
+    line-height: 24px;
+    height: 24px;
+    padding: 13px 0 30px;
+    vertical-align: center;
+    /* border-bottom: 1px solid #999999; */
+}
+
+.right-menu .list .read {
+    color: #c0363f;
+    border: 1px solid #c0363f;
+    padding: 2px 10px;
+    font-size: 13px;
+    border-radius: 12px;
+    margin-left: 10px;
+    /* border-bottom: 1px solid #999999; */
+}
+
+.right-menu .list .line {
+    background-color: #dddddd;
+    width: 120px;
+    height: 1px;
+    /* border-bottom: 1px solid #999999; */
+}
+
+/*Mobile 样式开始*/
+.mobile-container {
+    width: 100%;
+    display: none;
+}
+.mobile-top {
+    width: 100%;
+    height: 36px;
+    background-color: rgba(51, 51, 51, 0.98);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+}
+.mobile-info {
+    width: 100%;
+    height: 190px;
+    color: white;
+    background: url(../images/left-menu-bg.jpg) no-repeat center center;
+    /*background-color: red;*/
+    background-size: cover;
+    padding-top: 36px;
+}
+.mobile-info .photo {
+    margin: 0 auto 0;
+    width: 56px;
+}
+.mobile-info .photo img {
+    width: 56px;
+    height: 56px;
+    margin-top: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.mobile-info .username {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 36px;
+}
+.mobile-motto {
+    /*margin: 0 auto;*/
+    text-align: center;
+    color: #CCCCCC;
+}
+.mobile-list-ul {
+    padding: 50px 80px 30px;
+}
+.mobile-list-ul a {
+    color: #333333;
+    font-size: 22px;
+    margin: 30px 0 0;
+}
+.mobile-list-ul a:link, a:visited {
+    color: #333333;
+}
+.mobile-list-ul a:hover {
+    color: #c0363f;
+}
+.mobile-list-ul p {
+    color: #999999;
+    font-size: 14px;
+    padding: 5px 0 0;
+    /* border-bottom: 1px solid #999999; */
+}
+.mobile-list-ul .time {
+    color: #c7c7c7;
+    font-size: 13px;
+    line-height: 24px;
+    height: 24px;
+    padding: 13px 0 30px;
+    vertical-align: center;
+    /* border-bottom: 1px solid #999999; */
+}
+.mobile-list-ul .read {
+    color: #c0363f;
+    border: 1px solid #c0363f;
+    padding: 2px 10px;
+    font-size: 13px;
+    border-radius: 12px;
+    margin-left: 10px;
+    /* border-bottom: 1px solid #999999; */
+}
+.mobile-list-ul .line {
+    background-color: #dddddd;
+    width: 120px;
+    height: 1px;
+    margin-bottom: 30px;
     /* border-bottom: 1px solid #999999; */
 }
